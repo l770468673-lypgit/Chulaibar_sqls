@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.tianyi.chulaibar">
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <!-- 读取存储卡的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 联网的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 相机的权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 地图包、搜索包需要的基础权限 -->
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- 不是SDK需要的权限，是示例中的后台唤醒定位需要的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- 需要运行时注册的权限 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于提高GPS定位速度 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 读取缓存数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- 更改设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <!-- 3.2.0版本增加 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 3.2.0版本增加 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="出来bar"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 自己电脑 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c4815a64cbfa5579293d7820711e8c54"></meta-data>
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService"></service>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity android:name=".activity.LoginActivity">
+
+
+        </activity>
+        <activity android:name=".activity.ZhuCeActivity"/>
+        <activity android:name=".activity.ZhaoHuiPassWordActivity"/>
+        <activity android:name=".activity.XiangCeActivity"/>
+        <activity android:name=".activity.GeRenXinXiActivity"/>
+        <activity android:name=".activity.SheZhiActivity"/>
+        <activity android:name=".activity.FaBuActivity"/>
+        <activity android:name=".activity.PrizeActivity"/>
+        <activity android:name=".activity.CanYuActivity"/>
+        <activity android:name=".activity.HelpActivity"/>
+        <activity android:name=".activity.CollectionActivity"/>
+        <activity android:name=".activity.ExitActivity"/>
+        <activity android:name=".activity.PosterSetActivity"></activity>
+        <activity android:name=".activity.CostSetActivity"/>
+        <activity android:name=".activity.GiftSetActivity"/>
+        <activity android:name=".activity.PassWordActivity"/>
+        <activity android:name=".activity.PhoneActivity"/>
+        <activity android:name=".activity.HuoDongDetailActivty"/>
+        <activity android:name=".activity.MarkPositionActivity"></activity>
+        <activity android:name=".activity.ProvinceListActivity"/>
+        <activity android:name=".activity.RefundSetActivity"/>
+        <activity android:name=".activity.GetPosterFromModelActivity"/>
+        <activity android:name=".activity.AboutUsActivity"></activity>
+        <activity android:name=".activity.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="myUser.db"/>
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1"/>
+
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.tianyi.chulaibar.db.User"
+            />
+    </application>
+
+</manifest>

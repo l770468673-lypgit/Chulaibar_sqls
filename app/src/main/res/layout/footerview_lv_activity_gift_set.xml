@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    tools:context="com.tianyi.chulaibar.activity.GiftSetActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_additem"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_additem"
+                android:text="+添加费用项"
+                android:textSize="12sp"
+                android:textColor="#46b071"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_queding_activity_gift"
+            android:layout_below="@+id/rl_additem"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/confrim_faxian_background"
+            android:text="完成"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_width="125dp"
+            android:layout_height="27dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

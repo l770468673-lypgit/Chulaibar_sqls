@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f2f6"
+    tools:context=".activity.GeRenXinXiActivity">
+
+    <RelativeLayout
+        android:background="#48AF81"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/iv_back_gerenxinxi_activity"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back_shezhi"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/tv_title_shezhi"
+            android:layout_toRightOf="@+id/iv_back_gerenxinxi_activity"
+            android:text="账户资料"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/rl_name_gerenxinxi_activity"
+        android:background="#ffffff"
+        android:paddingLeft="24dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <ImageView
+            android:id="@+id/iv_name_gerenxinxi_activity"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/name_gerenxinxi"
+            android:layout_width="15dp"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:id="@+id/tv_name_gerenxinxi_activity"
+            android:layout_toRightOf="@+id/iv_name_gerenxinxi_activity"
+            android:layout_marginLeft="22dp"
+            android:text="姓名"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv2_name_gerenxinxi_activity"
+            android:layout_toLeftOf="@+id/iv2_name_gerenxinxi_activity"
+            android:layout_marginRight="15dp"
+            android:text="Anne Hathaway"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/iv2_name_gerenxinxi_activity"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/next_shezhi"
+            android:layout_width="6dp"
+            android:layout_height="13dp" />
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e8e8e8"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_sex_gerenxinxi_activity"
+        android:background="#ffffff"
+        android:paddingLeft="24dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <ImageView
+            android:id="@+id/iv_sex_gerenxinxi_activity"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/sex_gerenxinxi"
+            android:layout_width="15dp"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:id="@+id/tv_sex_gerenxinxi_activity"
+            android:layout_toRightOf="@+id/iv_sex_gerenxinxi_activity"
+            android:layout_marginLeft="22dp"
+            android:text="性别"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv2_sex_gerenxinxi_activity"
+           android:layout_toLeftOf="@+id/iv2_sex_gerenxinxi_activity"
+            android:layout_marginRight="15dp"
+            android:text="男"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv2_sex_gerenxinxi_activity"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/next_shezhi"
+            android:layout_width="6dp"
+            android:layout_height="13dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/rl_phone_gerenxinxi_activity"
+        android:background="#ffffff"
+        android:paddingLeft="24dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <ImageView
+            android:id="@+id/iv_phone_gerenxinxi_activity"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/phone_gerenxinxi"
+            android:layout_width="15dp"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:id="@+id/tv_phone_gerenxinxi_activity"
+            android:layout_toRightOf="@+id/iv_phone_gerenxinxi_activity"
+            android:layout_marginLeft="22dp"
+            android:text="电话"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv2_phone_gerenxinxi_activity"
+            android:layout_toLeftOf="@+id/iv2_phone_gerenxinxi_activity"
+            android:layout_marginRight="15dp"
+            android:text="15092189997"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv2_phone_gerenxinxi_activity"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/next_shezhi"
+            android:layout_width="6dp"
+            android:layout_height="13dp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e8e8e8"/>
+    <RelativeLayout
+        android:id="@+id/rl_email_gerenxinxi_activity"
+        android:background="#ffffff"
+        android:paddingLeft="24dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <ImageView
+            android:id="@+id/iv_email_gerenxinxi_activity"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/email_gerenxinxi"
+            android:layout_width="15dp"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:id="@+id/tv_email_gerenxinxi_activity"
+            android:layout_toRightOf="@+id/iv_email_gerenxinxi_activity"
+            android:layout_marginLeft="22dp"
+            android:text="邮箱"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv2_email_gerenxinxi_activity"
+            android:layout_toLeftOf="@+id/iv2_email_gerenxinxi_activity"
+            android:layout_marginRight="15dp"
+            android:text="13655555@qq.com"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv2_email_gerenxinxi_activity"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/next_shezhi"
+            android:layout_width="6dp"
+            android:layout_height="13dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e8e8e8"/>
+    <RelativeLayout
+        android:id="@+id/rl_idcard_gerenxinxi_activity"
+        android:background="#ffffff"
+        android:paddingLeft="24dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <ImageView
+            android:id="@+id/iv_idcard__gerenxinxi_activity"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/idcard_gerenxinxi"
+            android:layout_width="15dp"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:id="@+id/tv_idcard__gerenxinxi_activity"
+            android:layout_toRightOf="@+id/iv_idcard__gerenxinxi_activity"
+            android:layout_marginLeft="22dp"
+            android:text="身份证"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv2_idcard__gerenxinxi_activity"
+            android:layout_toLeftOf="@+id/iv2_idcard__gerenxinxi_activity"
+            android:layout_marginRight="15dp"
+            android:text="370000000000000000"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv2_idcard__gerenxinxi_activity"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/next_shezhi"
+            android:layout_width="6dp"
+            android:layout_height="13dp" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e8e8e8"/>
+    <RelativeLayout
+        android:id="@+id/rl_address_gerenxinxi_activity"
+        android:background="#ffffff"
+        android:paddingLeft="24dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <ImageView
+            android:id="@+id/iv_address_gerenxinxi_activity"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/address_gerenxinxi"
+            android:layout_width="15dp"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:id="@+id/tv_address_gerenxinxi_activity"
+            android:layout_toRightOf="@+id/iv_address_gerenxinxi_activity"
+            android:layout_marginLeft="22dp"
+            android:text="地址"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv2_address_gerenxinxi_activity"
+            android:layout_toLeftOf="@+id/iv2_address_gerenxinxi_activity"
+            android:layout_marginRight="15dp"
+            android:text="青岛"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv2_address_gerenxinxi_activity"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/next_shezhi"
+            android:layout_width="6dp"
+            android:layout_height="13dp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e8e8e8"/>
+
+
+       <RelativeLayout
+           android:background="#ffffff"
+           android:id="@+id/rl_qianming_gerenxinxi_activity"
+           android:paddingLeft="24dp"
+           android:paddingRight="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="75dp">
+
+           <ImageView
+               android:id="@+id/iv_qianming_gerenxinxi_activity"
+               android:src="@mipmap/qianming_gerenxinxi"
+               android:layout_marginTop="10dp"
+               android:layout_width="15dp"
+               android:layout_height="17dp" />
+
+           <TextView
+               android:id="@+id/tv_qianming_gerenxinxi_activity"
+               android:layout_toRightOf="@+id/iv_qianming_gerenxinxi_activity"
+               android:layout_marginLeft="22dp"
+               android:layout_marginTop="10dp"
+               android:gravity="center_vertical"
+               android:text="个性签名"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <ImageView
+               android:id="@+id/iv_qianming2_gerenxinxi_activity"
+               android:layout_alignParentRight="true"
+               android:layout_marginTop="10dp"
+               android:src="@mipmap/next_shezhi"
+               android:layout_width="6dp"
+               android:layout_height="13dp" />
+
+           <TextView
+               android:layout_below="@+id/tv_qianming_gerenxinxi_activity"
+               android:layout_alignLeft="@+id/tv_qianming_gerenxinxi_activity"
+               android:layout_marginTop="10dp"
+               android:text="人生如戏，戏如人生,每个人走在上演着不用的角色"
+               android:textSize="12sp"
+               android:textColor="#666666"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+       </RelativeLayout>
+
+</LinearLayout>

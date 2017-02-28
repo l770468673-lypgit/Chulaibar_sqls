@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8e8e8"
+    tools:context="com.tianyi.chulaibar.activity.PhoneActivity">
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/iv_back_phone_activity"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_shezhi"
+            android:onClick="xiugaiPhone"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/tv_title_phone_activity"
+            android:text="短信"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/rl_phone_activity"
+      android:background="@mipmap/bind_phonenumber_01"
+      android:layout_width="match_parent"
+      android:layout_height="100dp">
+
+  </RelativeLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_yanzheng_phone_activity"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<RelativeLayout-->
+            <!--android:background="#ffffff"-->
+            <!--android:paddingLeft="24dp"-->
+            <!--android:paddingRight="24dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_number_phone_activity"-->
+                <!--android:text="137*****895"-->
+                <!--android:textSize="12sp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent" />-->
+
+            <!--<TextView-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:id="@+id/tv_yanzhegnma_phone_activity"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingRight="5dp"-->
+                <!--android:text="立即验证"-->
+                <!--android:textColor="#119E96"-->
+                <!--android:textSize="10sp"-->
+                <!--android:gravity="center"-->
+                <!--android:background="@drawable/yanzhengma_phone_activity_background"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="20dp" />-->
+
+
+        <!--</RelativeLayout>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#e8e8e8"/>-->
+        <!--<RelativeLayout-->
+            <!--android:background="#ffffff"-->
+            <!--android:paddingLeft="24dp"-->
+            <!--android:paddingRight="24dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp">-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_yanzhengma_phone_activity"-->
+                <!--android:background="@null"-->
+                <!--android:textSize="12sp"-->
+                <!--android:hint="请输入手机短信中的验证码"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#e8e8e8"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_yanzheng_phone_activity"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:text="验证"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:onClick="xiugaiPhone"-->
+            <!--android:background="@drawable/button_fabu_backgroud"-->
+            <!--android:layout_width="125dp"-->
+            <!--android:layout_height="27dp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_bangding_phone_activity"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<RelativeLayout-->
+            <!--android:background="#ffffff"-->
+            <!--android:paddingLeft="24dp"-->
+            <!--android:paddingRight="24dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp">-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_number_phone_activity"-->
+                <!--android:hint="请输入新手机号码"-->
+                <!--android:background="@null"-->
+                <!--android:textSize="12sp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent" />-->
+
+            <!--<TextView-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:id="@+id/tv_yanzhegnma2_phone_activity"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingRight="5dp"-->
+                <!--android:text="获取验证码"-->
+                <!--android:textColor="#119E96"-->
+                <!--android:textSize="10sp"-->
+                <!--android:gravity="center"-->
+                <!--android:background="@drawable/yanzhengma_phone_activity_background"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="20dp" />-->
+
+
+        <!--</RelativeLayout>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#e8e8e8"/>-->
+        <!--<RelativeLayout-->
+            <!--android:background="#ffffff"-->
+            <!--android:paddingLeft="24dp"-->
+            <!--android:paddingRight="24dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp">-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_yanzhengma2_phone_activity"-->
+                <!--android:background="@null"-->
+                <!--android:textSize="12sp"-->
+                <!--android:hint="请输入验证码"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#e8e8e8"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="24dp"-->
+            <!--android:layout_marginRight="24dp"-->
+            <!--android:text="重新绑定后，原手机号码将不能作为登录凭证"-->
+            <!--android:textSize="10sp"-->
+            <!--android:textColor="#119E96"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_bangding_phone_activity"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:text="绑定"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:background="@drawable/button_fabu_backgroud"-->
+            <!--android:layout_width="125dp"-->
+            <!--android:layout_height="27dp" />-->
+
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/ll_activity_phone"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="#ffffff"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <EditText
+                android:id="@+id/et_number_activity_phone"
+                android:layout_toLeftOf="@+id/tv_yanzhegnma_activity_phone"
+                android:layout_marginRight="10dp"
+                android:textSize="12sp"
+                android:textColor="#cbd8db"
+                android:textColorHint="#cbd8db"
+                android:hint="请输入您的手机号"
+                android:maxLines="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_yanzhegnma_activity_phone"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="立即验证"
+                android:textColor="#119E96"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:onClick="xiugaiPhone"
+                android:background="@drawable/yanzhengma_phone_activity_background"
+                android:layout_width="50dp"
+                android:layout_height="20dp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e8e8e8"/>
+        <RelativeLayout
+            android:background="#ffffff"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <EditText
+                android:id="@+id/et_yanzhengma_activity_phone"
+                android:paddingRight="5dp"
+                android:background="@null"
+                android:textSize="12sp"
+                android:textColor="#cbd8db"
+                android:textColorHint="#cbd8db"
+                android:hint="请输入手机短信中的验证码"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e8e8e8"/>
+
+        <Button
+            android:id="@+id/btn_yanzheng_activity_phone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="验证"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:onClick="zhaohuiPassword"
+            android:background="@drawable/zhuce_button_background"
+            android:layout_width="125dp"
+            android:layout_height="27dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,1029 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            tools:context="com.tianyi.chulaibar.fragment.FaBuFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/iv_logo_fabu"
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/logo_shouye"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#e8e8e8"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
+
+            <ImageView
+                android:id="@+id/iv_name_fabu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/name_huodong_fabu"/>
+
+            <EditText
+                android:id="@+id/et_name_fabu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/iv_name_fabu"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="活动名称"
+                android:textColor="#7D7D8E"
+                android:textColorHint="#7D7D8E"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#e8e8e8"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
+
+            <ImageView
+                android:id="@+id/iv_fenlei_fabu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/fenlei_fabu"/>
+
+            <Spinner
+                android:id="@+id/spinner_fenlei_fabu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/iv_fenlei_fabu"
+                android:gravity="center_vertical"
+                android:spinnerMode="dialog"
+                android:text="活动类型"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_fenlei_fabu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/iv_fenlei_fabu"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_fenlei_fabu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="活动类型"
+                    android:textColor="#7D7D8E"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="6dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/arrow_down_fabu"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#e8e8e8"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
+
+            <ImageView
+                android:id="@+id/iv_haibao_fabu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/haibao_fabu"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_shangchuan_haibao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/iv_haibao_fabu">
+
+                <TextView
+                    android:id="@+id/tv_haibao_fabu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="上传封面图"
+                    android:textColor="#7D7D8E"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:id="@+id/tv_haibaostthc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=" "
+                    android:visibility="gone"
+                    android:textColor="#7D7D8E"
+                    android:textSize="12sp"/>
+                <LinearLayout
+                    android:id="@+id/ll_shangchuan_haibao"
+                    android:layout_width="50dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/button_shangchuan_fabu_backgroud"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="1dp"
+                        android:src="@mipmap/post_fabu"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="上传"
+                        android:textColor="#7D7D8E"
+                        android:textSize="10sp"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#e8e8e8"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
+
+            <ImageView
+                android:id="@+id/iv_address_fabu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/address_fabu"/>
+
+            <TextView
+                android:id="@+id/tv_address_fabu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/iv_address_fabu"
+                android:gravity="center_vertical"
+                android:text="活动地址"
+                android:textColor="#7D7D8E"
+                android:textSize="12sp"/>
+
+            <RelativeLayout
+
+                android:id="@+id/rl_city_fabu"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_address_fabu">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/iv_arrow_down"
+                    android:gravity="right|center_vertical"
+                    android:text="省市"
+                    android:textColor="#7D7D8E"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_arrow_down"
+                    android:layout_width="12dp"
+                    android:layout_height="6dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/arrow_down_fabu"/>
+            </RelativeLayout>
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_city_fabu"-->
+            <!--android:layout_toRightOf="@+id/tv_address_fabu"-->
+            <!--android:layout_marginLeft="40dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<TextView-->
+            <!--android:id="@+id/address"-->
+            <!--android:text="省市"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="#7D7D8E"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent" />-->
+            <!--<ImageView-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:src="@mipmap/arrow_down_fabu"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_width="12dp"-->
+            <!--android:layout_height="6dp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<HorizontalScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_toRightOf="@+id/rl_city_fabu">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rl_city_fabu">
+
+                <TextView
+                    android:id="@+id/tv_detailaddress_fabu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true"
+                    android:text="详细地址"
+                    android:textColor="#7D7D8E"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+
+            <!--</HorizontalScrollView>-->
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#e8e8e8"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
+
+            <ImageView
+                android:id="@+id/iv_time_start_fabu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/start_time"/>
+
+            <TextView
+                android:id="@+id/tv_huodongtime_fabu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/iv_time_start_fabu"
+                android:gravity="center_vertical"
+                android:hint="活动时间"
+                android:textColor="#7D7D8E"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/et_huodongtime_start_fabu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/tv_huodongtime_fabu"
+                android:background="@null"
+                android:focusable="false"
+                android:hint="开始"
+                android:textColor="#7D7D8E"
+                android:textColorHint="#7D7D8E"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/iv_time_divider_fabu"
+                android:layout_width="8dp"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/et_huodongtime_start_fabu"
+                android:background="#7D7D8E"/>
+
+            <EditText
+                android:id="@+id/et_huodongtime_end_fabu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/iv_time_divider_fabu"
+                android:background="@null"
+                android:focusable="false"
+                android:hint="截止"
+                android:textColor="#7D7D8E"
+                android:textColorHint="#7D7D8E"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#e8e8e8"/>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/iv_edit_fabu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:src="@mipmap/detail_huodong_fabu"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/iv_edit_fabu"
+                android:background="@drawable/et_detail_fabu_background"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+
+                <LinearLayout
+                    android:id="@+id/lly_addview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_fenlei_fabu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@null"
+                        android:hint="活动详情描述......"
+                        android:paddingBottom="8dp"
+                        android:textColor="#7D7D8E"
+                        android:textColorHint="#7D7D8E"
+                        android:textSize="12sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_huodong_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+
+
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/home_user_imgs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/jieshao_pic_fabu"/>
+
+                        <EditText
+
+                            android:id="@+id/jieshaotupian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:hint="活动介绍图片"
+                            android:singleLine="true"
+                            android:textColor="#7D7D8E"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_huodong_vedio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/ll_huodong_pic"
+
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/jieshao_vedio_fabu"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:text="活动介绍视频"
+                            android:textColor="#7D7D8E"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#e8e8e8"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
+
+            <ImageView
+                android:id="@+id/iv_contact_fabu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/contact_fabu"/>
+
+            <EditText
+                android:id="@+id/et_contact_fabu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/iv_contact_fabu"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="联系方式"
+                android:inputType="number"
+                android:textColor="#7D7D8E"
+                android:textColorHint="#7D7D8E"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#e8e8e8"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
+
+            <ImageView
+                android:id="@+id/iv_renshu_fabu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/count_people_fabu"/>
+
+            <EditText
+                android:id="@+id/et_renshu_fabu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/iv_renshu_fabu"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="参与人数"
+                android:inputType="number"
+                android:textColor="#7D7D8E"
+                android:textColorHint="#7D7D8E"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#e8e8e8"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_gengduo_fabu"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="9dp"
+            android:background="#DFDFDF">
+
+            <ImageView
+                android:id="@+id/iv_gengduo_fabu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toLeftOf="@+id/tv_gengduo_fabu"
+                android:src="@mipmap/more_fabu"/>
+
+            <TextView
+                android:id="@+id/tv_gengduo_fabu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="报名时间、费用、礼品等选填项"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_gengduo_fabu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#e8e8e8"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+                <ImageView
+                    android:id="@+id/iv_feiyong_fabu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/cost_fabu"/>
+
+                <TextView
+                    android:id="@+id/tv_feiyong_fabu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:layout_toRightOf="@+id/iv_feiyong_fabu"
+                    android:gravity="center_vertical"
+                    android:text="费用设置"
+                    android:textColor="#7D7D8E"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_feiyong_right_fabu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/ll_shangchuan_feiyong_fabu"
+                    android:gravity="center_vertical"
+                    android:text="已设置"
+                    android:textColor="#7D7D8E"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_shangchuan_feiyong_fabu"
+                    android:layout_width="50dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/button_shangchuan_fabu_backgroud"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/edit_fabu"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="上传"
+                        android:textColor="#7D7D8E"
+                        android:textSize="10sp"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#e8e8e8"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+                <ImageView
+                    android:id="@+id/iv_liwu_fabu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/liwu_fabu"/>
+
+                <TextView
+                    android:id="@+id/tv_liwu_fabu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:layout_toRightOf="@+id/iv_liwu_fabu"
+                    android:gravity="center_vertical"
+                    android:text="礼物设置"
+                    android:textColor="#7D7D8E"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_liwu_right_fabu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/ll_shangchuan_liwu_fabu"
+                    android:gravity="center_vertical"
+                    android:text="未设置"
+                    android:textColor="#7D7D8E"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_shangchuan_liwu_fabu"
+                    android:layout_width="50dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/button_shangchuan_fabu_backgroud"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/edit_fabu"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="上传"
+                        android:textColor="#7D7D8E"
+                        android:textSize="10sp"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#e8e8e8"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+                <ImageView
+                    android:id="@+id/iv_baomingtime_start_fabu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/start_time"/>
+
+                <EditText
+                    android:id="@+id/et_baomingtime_start_fabu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_toRightOf="@+id/iv_baomingtime_start_fabu"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="报名时间"
+                    android:textColor="#7D7D8E"
+                    android:textColorHint="#7D7D8E"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#e8e8e8"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+                <ImageView
+                    android:id="@+id/iv_baomingtime_end_fabu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/end_time"/>
+
+                <EditText
+                    android:id="@+id/et_baomingtime_end_fabu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_toRightOf="@+id/iv_baomingtime_end_fabu"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="截止报名"
+                    android:textColor="#7D7D8E"
+                    android:textColorHint="#7D7D8E"
+                    android:textSize="12sp"/>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#e8e8e8"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+                <ImageView
+                    android:id="@+id/iv_yinsi_fabu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/yinsi_fabu"/>
+
+                <TextView
+                    android:id="@+id/tv_yinsi_fabu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:layout_toRightOf="@+id/iv_yinsi_fabu"
+                    android:gravity="center_vertical"
+                    android:text="私人活动"
+                    android:textColor="#7D7D8E"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_yinsi_right_fabu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/tglbtn_yinsi_fabu"
+                    android:gravity="center_vertical"
+                    android:text="(仅好友可见)"
+                    android:textColor="#7D7D8E"
+                    android:textSize="12sp"/>
+
+                <!--    android:background="@drawable/selector_togglebutton_fabu"-->
+                <ToggleButton
+                    android:id="@+id/tglbtn_yinsi_fabu"
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/button_close"
+                    android:checked="true"
+                    android:padding="2dp"
+                    android:textOff=""
+                    android:textOn=""/>
+
+            </RelativeLayout>
+
+            <!--<ImageView-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#e8e8e8"/>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:layout_marginLeft="24dp"-->
+            <!--android:layout_marginRight="24dp">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_weituo_fabu"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@mipmap/weituo_fabu"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_weituo_fabu"-->
+            <!--android:layout_marginLeft="23dp"-->
+            <!--android:layout_toRightOf="@+id/iv_weituo_fabu"-->
+            <!--android:text="咨询委托"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="#7D7D8E"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_quetion_fabu"-->
+            <!--android:layout_toLeftOf="@+id/tglbtn_weituo_fabu"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@mipmap/question_fabu"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp" />-->
+
+            <!--<ToggleButton-->
+            <!--android:id="@+id/tglbtn_weituo_fabu"-->
+            <!--android:padding="2dp"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:textOn=""-->
+            <!--android:textOff=""-->
+            <!--android:background="@drawable/selector_togglebutton_fabu"-->
+            <!--android:checked="true"/>-->
+
+
+            <!--</RelativeLayout>-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#e8e8e8"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="15dp"
+            android:background="#f1f2f6">
+
+            <ImageView
+                android:id="@+id/iv_checkbox_fabu"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="110dp"
+                android:src="@drawable/checkbox_fabu"/>
+
+            <TextView
+                android:id="@+id/tv_tongyi_fabu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/iv_checkbox_fabu"
+                android:text="同意"
+                android:textColor="#7D7D8E"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_tongyi_fabu"
+                android:text="《出来吧服务协议》"
+                android:textColor="#39AB7C"
+                android:textSize="10sp"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_priview"
+                android:layout_width="125dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_priview_backgroud"
+                android:text="预览"
+                android:textColor="#ffffff"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/btn_fabu"
+                android:layout_width="125dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/button_fabu_backgroud"
+                android:text="发布"
+                android:textColor="#ffffff"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

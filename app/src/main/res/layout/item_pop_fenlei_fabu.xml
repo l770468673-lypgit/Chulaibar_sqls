@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="36dp">
+
+    <ImageView
+        android:id="@+id/iv_pop_fenlei_fabu"
+        android:background="@drawable/selector_spinner_fabu"
+        android:layout_centerVertical="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+
+
+<TextView
+    android:id="@+id/tv_pop_fenlei_fabu"
+    android:layout_toRightOf="@+id/iv_pop_fenlei_fabu"
+    android:layout_marginLeft="20dp"
+    android:text="青岛2016荧光电子音乐节免费门票青岛"
+    android:textSize="12sp"
+    android:layout_centerVertical="true"
+    android:gravity="center_vertical"
+    android:textColor="#848484"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+
+</RelativeLayout>

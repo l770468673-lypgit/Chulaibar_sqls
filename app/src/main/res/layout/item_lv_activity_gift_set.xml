@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical"
+    tools:context="com.tianyi.chulaibar.activity.GiftSetActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#f2f2f2" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_shadow"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/tv_giftname_activity_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="礼物名称"
+                    android:textColor="#7d7d8e"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_name_activity_gift_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/tv_giftname_activity_gift"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:hint="优惠券"
+                    android:singleLine="true"
+                    android:textColor="#262728"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/tv1_giftnumber_activity_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="金额"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv2_giftnumber_activity_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv1_giftnumber_activity_gift"
+                    android:text="数量"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_moneny_activity_gift_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/tv2_giftnumber_activity_gift"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:hint="15"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="#262728"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/tv1_shuoming_activity_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="说明"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv2_shuoming_activity_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv1_shuoming_activity_gift"
+                    android:text="说明"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_shuoming_activity_gift_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/tv2_shuoming_activity_gift"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:hint="满两位报名赠送"
+                    android:singleLine="true"
+                    android:textColor="#262728"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_delete_activity_gift"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/delete_round" />
+
+
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_shadow"-->
+    <!--android:background="#f2f2f2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="20dp" />-->
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_total"-->
+    <!--android:layout_below="@+id/iv_shadow"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<RelativeLayout-->
+
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:background="#ffffff"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_giftname_activity_gift"-->
+    <!--android:text="礼物名称"-->
+    <!--android:textSize="12sp"-->
+    <!--android:textColor="#7d7d8e"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="20dp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_name_activity_gift_set"-->
+    <!--android:layout_toRightOf="@+id/tv_giftname_activity_gift"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:textSize="12sp"-->
+    <!--android:textColor="#262728"-->
+    <!--android:singleLine="true"-->
+    <!--android:background="@null"-->
+    <!--android:hint="优惠券"-->
+    <!--android:focusable="true"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="20dp" />-->
+
+
+    <!--</RelativeLayout>-->
+
+    <!--<ImageView-->
+    <!--android:background="#cccccc"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp" />-->
+    <!--<RelativeLayout-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:background="#ffffff"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp">-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv1_giftnumber_activity_gift"-->
+    <!--android:text="数量"-->
+    <!--android:textSize="12sp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:visibility="invisible"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="20dp" />-->
+    <!--<TextView-->
+    <!--android:layout_toRightOf="@+id/tv1_giftnumber_activity_gift"-->
+    <!--android:id="@+id/tv2_giftnumber_activity_gift"-->
+    <!--android:text="金额"-->
+    <!--android:textSize="12sp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="20dp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_moneny_activity_gift_set"-->
+    <!--android:layout_toRightOf="@+id/tv2_giftnumber_activity_gift"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:textSize="12sp"-->
+    <!--android:textColor="#262728"-->
+    <!--android:singleLine="true"-->
+    <!--android:background="@null"-->
+    <!--android:hint="15"-->
+    <!--android:inputType="number"-->
+    <!--android:focusable="true"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="20dp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<ImageView-->
+    <!--android:background="#cccccc"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp" />-->
+    <!--<RelativeLayout-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:background="#ffffff"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv1_shuoming_activity_gift"-->
+    <!--android:text="说明"-->
+    <!--android:textSize="12sp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:visibility="invisible"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv2_shuoming_activity_gift"-->
+    <!--android:layout_toRightOf="@+id/tv1_shuoming_activity_gift"-->
+    <!--android:text="说明"-->
+    <!--android:textSize="12sp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="20dp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_shuoming_activity_gift_set"-->
+    <!--android:layout_toRightOf="@+id/tv2_shuoming_activity_gift"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:textSize="12sp"-->
+    <!--android:textColor="#262728"-->
+    <!--android:singleLine="true"-->
+    <!--android:background="@null"-->
+    <!--android:hint="满两位报名赠送"-->
+    <!--android:focusable="true"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="20dp" />-->
+
+    <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_delete_activity_gift"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:src="@mipmap/delete_round"-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp" />-->
+
+
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>

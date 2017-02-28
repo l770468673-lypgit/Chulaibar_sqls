@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tianyi.chulaibar.activity.MarkPositionActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/delete_mark_position"/>
+        <TextView
+            android:text="标记位置"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="删除"/>
+            <TextView
+                android:id="@+id/success"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="8dp"
+                android:text="完成"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_sousuo_faxian"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_search_first"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/search_faxian_background">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/search_faxian"/>
+            <!--android:imeOptions="actionNext"-->
+            <AutoCompleteTextView
+
+                android:id="@+id/input_edittext"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@null"
+                android:textColor="#323232"
+                android:textSize="10sp"
+                android:hint="活动名称或关键词 ..."
+                android:textColorHint="#c6c6c6" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/inputlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </ListView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <com.amap.api.maps.MapView
+
+            android:id="@+id/map"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="200dp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/poi_marker_pressed"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="#20B69D"/>
+    <ListView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"></ListView>
+</LinearLayout>

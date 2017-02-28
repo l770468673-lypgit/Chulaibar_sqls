@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    tools:context="com.tianyi.chulaibar.activity.RefundSetActivity">
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@mipmap/back_shezhi"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:text="退款设置"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:paddingLeft="16dp"
+        android:paddingRight="14dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_refundset_activity_cost"
+            android:text="活动开始前可退款"
+            android:textSize="12sp"
+            android:textColor="#262728"
+           android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/selector_iv_refund_activity"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="23dp"
+            android:layout_height="23dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:background="#cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:paddingLeft="16dp"
+        android:paddingRight="14dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="活动结束前可退款"
+            android:textSize="12sp"
+            android:textColor="#262728"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/selector_iv_refund_activity"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="23dp"
+            android:layout_height="23dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:background="#cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <RelativeLayout
+        android:background="#ffffff"
+        android:paddingLeft="16dp"
+        android:paddingRight="14dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_refundtime_activity_refund"
+            android:text="可退款时间"
+            android:textSize="12sp"
+            android:textColor="#262728"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_toRightOf="@+id/tv_refundtime_activity_refund"
+            android:layout_marginLeft="54dp"
+            android:text="_月_日—_月_日"
+            android:textSize="12sp"
+            android:textColor="#262728"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/selector_iv_refund_activity"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="23dp"
+            android:layout_height="23dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:background="#cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <RelativeLayout
+        android:background="#ffffff"
+        android:paddingLeft="16dp"
+        android:paddingRight="14dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="不支持退款"
+            android:textSize="12sp"
+            android:textColor="#262728"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/selector_iv_refund_activity"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="23dp"
+            android:layout_height="23dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:background="#cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <RelativeLayout
+        android:background="#ffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="14dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/iv_shuoming_activity_fefund"
+            android:src="@mipmap/about_shezhi"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:layout_toRightOf="@+id/iv_shuoming_activity_fefund"
+            android:layout_marginLeft="6dp"
+            android:text="活动有人支付成功后，则不能更改退款设置"
+            android:textSize="12sp"
+            android:textColor="#959595"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

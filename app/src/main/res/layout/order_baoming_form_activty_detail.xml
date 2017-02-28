@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/form_baoming"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:text="报名表单"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+<ImageView
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="1dp" />
+
+    <!--报名者个人信息-->
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/et_name_form_baoming"
+        android:hint="姓名"
+        android:textCursorDrawable="@drawable/et_color_cusor"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:layout_height="40dp" />
+    <ImageView
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <EditText
+        android:id="@+id/et_phone_form_baoming"
+        android:hint="电话"
+        android:textCursorDrawable="@drawable/et_color_cusor"
+        android:background="@null"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        />
+
+    <ImageView
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <EditText
+        android:id="@+id/et_beizhu_form_baoming"
+        android:hint="备注"
+        android:textCursorDrawable="@drawable/et_color_cusor"
+        android:background="@null"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+</LinearLayout>
+
+
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+  <!--确定-->
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+                android:id="@+id/tv_queding_baoming_form_activity_detail"
+                android:padding="5dp"
+                android:background="@drawable/confrim_faxian_background"
+                android:text="确定"
+               android:layout_gravity="center"
+               android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

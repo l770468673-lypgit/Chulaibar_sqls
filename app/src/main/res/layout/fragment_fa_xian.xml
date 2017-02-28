@@ -1,0 +1,357 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tianyi.chulaibar.fragment.FaXianFragment">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_fragment_faxian_frist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/tv_title_faxian"
+                android:layout_centerInParent="true"
+                android:text="发现"
+                android:textSize="17sp"
+                android:textColor="#323232"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_sousuo_faxian"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_search_first"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="30dp"
+                 android:layout_gravity="center_vertical"
+                  android:background="@drawable/search_faxian_background">
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/search_faxian"/>
+
+                <EditText
+                     android:id="@+id/et1_search_faxian"
+                      android:layout_marginLeft="50dp"
+                      android:layout_marginRight="10dp"
+                      android:singleLine="true"
+                      android:layout_centerVertical="true"
+                      android:layout_width="match_parent"
+                      android:layout_height="20dp"
+                      android:background="@null"
+                      android:textColor="#323232"
+                      android:textSize="10sp"
+                      android:hint="活动名称或关键词 ..."
+                      android:textColorHint="#c6c6c6" />
+              </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+           android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_city_faxain"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/city_faxain"/>
+                <TextView
+                    android:id="@+id/tv_city_faxian"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_city_faxain"
+                    android:text="城市"
+                    android:gravity="center"
+                    android:textColor="#323232"
+                    android:textSize="14sp"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gridview_city"
+                android:numColumns="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchMode="columnWidth"
+               android:verticalSpacing="10dp"
+               />
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_time_faxian"
+                    android:layout_centerVertical="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/time_faxian"/>
+                <TextView
+                    android:id="@+id/tv_time_faxian"
+                    android:layout_toRightOf="@+id/iv_time_faxian"
+                    android:layout_centerVertical="true"
+                    android:text="时间"
+                    android:gravity="center"
+                    android:textColor="#323232"
+                    android:textSize="14sp"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gridview_time"
+                android:numColumns="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_fenlei_faixan"
+                    android:layout_centerVertical="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/fenlei_faxian"/>
+                <TextView
+                    android:id="@+id/tv_fenlei_faxian"
+                    android:layout_toRightOf="@+id/iv_fenlei_faixan"
+                    android:layout_centerVertical="true"
+                    android:text="分类"
+                    android:gravity="center"
+                    android:textColor="#323232"
+                    android:textSize="14sp"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gridview_fenlei"
+                android:numColumns="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_xingshi_faxian"
+                    android:layout_centerVertical="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/fee_faxian"/>
+                <TextView
+                    android:id="@+id/tv_xingshi_faxian"
+                    android:layout_toRightOf="@+id/iv_xingshi_faxian"
+                    android:layout_centerVertical="true"
+                    android:text="费用"
+                    android:gravity="center"
+                    android:textColor="#323232"
+                    android:textSize="14sp"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gridview_xingshi"
+                android:numColumns="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview_fragment_faxian_queding"
+                android:padding="5dp"
+                android:background="@drawable/confrim_faxian_background"
+                android:text="确定"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_fragment_faxian_second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_second_sousuo_faxian"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+      <ImageView
+          android:id="@+id/iv_back_detail_faxian"
+          android:layout_gravity="center_vertical"
+          android:src="@mipmap/back_shezhi"
+          android:layout_marginLeft="10dp"
+          android:layout_width="20dp"
+          android:layout_height="20dp" />
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/search_faxian_background">
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/search_faxian"/>
+
+                <EditText
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/et2_search_faxian"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="#323232"
+                    android:textSize="10sp"
+                    android:hint="活动名称或关键词 ..."
+                    android:textColorHint="#c6c6c6" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/ll_choose"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:gravity="center_vertical"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="30dp">
+
+         <TextView
+             android:id="@+id/tv_leixing_second"
+             android:gravity="center"
+             android:text="类型"
+             android:textColor="#02a7ab"
+             android:textSize="12sp"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             android:id="@+id/tv_time_second"
+             android:gravity="center"
+             android:text="时段"
+             android:textColor="#808080"
+             android:textSize="12sp"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             android:id="@+id/tv_feiyong_second"
+             android:gravity="center"
+             android:text="费用"
+             android:textColor="#808080"
+             android:textSize="12sp"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content" />
+     </LinearLayout>
+
+      <ImageView
+          android:background="#fafafa"
+          android:layout_width="match_parent"
+          android:layout_height="8dp" />
+
+        <ListView
+            android:id="@+id/lv_faxian_second"
+            android:divider="#fafafa"
+            android:dividerHeight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">出来bar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_results">对不起，111111111111111111没有搜索到相关数据！</string>
+    <string name="no_result">对不起，222222222222222222没有搜索到相关数据！</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_gift_name_item_lv_detail"
+           android:layout_centerInParent="true"
+            android:text="精美鈅匙扣"
+            android:maxLines="1"
+            android:textSize="10sp"
+            android:textColor="#262728"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_gift_numName_item_lv_activity_detail"
+                android:text="数量:"
+                android:textSize="10sp"
+                android:textColor="#7d7d8e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_gift_num_item_lv_activity_detail"
+                android:layout_toRightOf="@+id/tv_gift_numName_item_lv_activity_detail"
+                android:layout_marginLeft="10dp"
+                android:text="100个"
+                android:maxLines="1"
+                android:textSize="10sp"
+                android:textColor="#7d7d8e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_gift_description_item_lv_activity_detail"
+            android:layout_centerInParent="true"
+            android:text="报名前100名可获得"
+            android:maxLines="1"
+            android:textSize="10sp"
+            android:textColor="#7d7d8e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+</LinearLayout>

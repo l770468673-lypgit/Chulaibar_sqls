@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tianyi.chulaibar.activity.ZhuCeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+               android:id="@+id/iv_back_zhuce"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/back_shezhi"
+                android:onClick="ZhuCeBtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+
+            <ImageView
+                android:layout_marginTop="90dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="152dp"
+                android:layout_height="39dp"
+                android:src="@mipmap/logo_zhuce"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_marginLeft="4dp"
+                android:id="@+id/iv_phonenumber_login"
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="26dp"
+                android:src="@mipmap/phone_zhuce"/>
+            <ImageView
+                android:layout_toRightOf="@+id/iv_phonenumber_login"
+                android:id="@+id/line_count"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:background="#43aa78"
+                android:layout_width="0.5dp"
+                android:layout_height="15dp"
+                />
+
+
+            <LinearLayout
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/line_count"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/et_zhuce_username"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:textColorHint="#6606b4a1"
+                    android:hint="请输入你的手机号"
+                    android:background="@null"
+                    android:textCursorDrawable="@drawable/et_color_cusor"
+                    />
+                <TextView
+                    android:id="@+id/tv_change_zhucestyle"
+                    android:layout_alignParentRight="true"
+                    android:padding="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="切换成企业"
+                    android:textColor="#0bb89d"
+                    android:textSize="10sp"
+                    android:onClick="ZhuCeBtn"
+                    android:gravity="center"
+                    android:background="@drawable/change_loginstyle_background"
+                    android:layout_width="75dp"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#a3bac3"/>
+
+      <LinearLayout
+          android:id="@+id/ll_change_gerenzhuce"
+          android:visibility="visible"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <RelativeLayout
+              android:layout_marginTop="2dp"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginLeft="35dp"
+              android:layout_marginRight="35dp">
+
+
+              <ImageView
+                  android:layout_marginLeft="4dp"
+                  android:id="@+id/iv_message_gerenzhuce"
+                  android:layout_centerVertical="true"
+                  android:layout_width="20dp"
+                  android:layout_height="26dp"
+                  android:src="@mipmap/mes_zhuce"/>
+
+              <ImageView
+                  android:layout_toRightOf="@+id/iv_message_gerenzhuce"
+                  android:id="@+id/line_message_gerenzhuce"
+                  android:layout_marginLeft="7dp"
+                  android:layout_centerVertical="true"
+                  android:background="#43aa78"
+                  android:layout_width="0.5dp"
+                  android:layout_height="15dp"
+                  />
+
+              <LinearLayout
+                  android:layout_toRightOf="@+id/line_message_gerenzhuce"
+                  android:layout_marginLeft="8dp"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <EditText
+                      android:id="@+id/et_message_gerenzhuce"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="match_parent"
+                      android:textSize="12sp"
+                      android:hint="短信验证码"
+                      android:background="@null"
+                      android:textColorHint="#6606b4a1"
+                      android:inputType="numberPassword"
+                      android:textCursorDrawable="@drawable/et_color_cusor"
+                      />
+                  <TextView
+                      android:layout_alignParentRight="true"
+                      android:padding="2dp"
+                      android:id="@+id/tv_huoqu_gerenzhuce"
+                      android:layout_centerVertical="true"
+                      android:text="获取"
+                      android:textColor="#6606b4a1"
+                      android:textSize="10sp"
+                      android:onClick="ZhuCeBtn"
+                      android:gravity="center"
+                      android:background="@drawable/huoqu_gerenzhuce_background"
+                      android:layout_width="39dp"
+                      android:layout_height="18dp" />
+              </LinearLayout>
+          </RelativeLayout>
+
+          <ImageView
+              android:layout_marginLeft="35dp"
+              android:layout_marginRight="35dp"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"
+              android:background="#a3bac3"/>
+
+          <RelativeLayout
+              android:layout_marginTop="2dp"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginLeft="35dp"
+              android:layout_marginRight="35dp">
+
+
+              <ImageView
+                  android:layout_marginLeft="4dp"
+                  android:id="@+id/iv_password_gerenzhuce"
+                  android:layout_centerVertical="true"
+                  android:layout_width="20dp"
+                  android:layout_height="26dp"
+                  android:src="@mipmap/password1_zhuce"/>
+
+              <ImageView
+                  android:layout_toRightOf="@+id/iv_password_gerenzhuce"
+                  android:id="@+id/line_password_gerenzhuce"
+                  android:layout_marginLeft="7dp"
+                  android:layout_centerVertical="true"
+                  android:background="#43aa78"
+                  android:layout_width="0.5dp"
+                  android:layout_height="15dp"
+                  />
+              <EditText
+                  android:id="@+id/et_password_gerenzhuce"
+                  android:layout_toRightOf="@+id/line_password_gerenzhuce"
+                  android:layout_marginLeft="8dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:textSize="12sp"
+                  android:hint="请输入密码(不少于6位)"
+                  android:background="@null"
+                  android:textColorHint="#6606b4a1"
+                  android:inputType="numberPassword"
+                  android:textCursorDrawable="@drawable/et_color_cusor"
+                  />
+          </RelativeLayout>
+
+          <ImageView
+              android:layout_marginLeft="35dp"
+              android:layout_marginRight="35dp"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"
+              android:background="#a3bac3"/>
+          <RelativeLayout
+              android:layout_marginTop="2dp"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginLeft="35dp"
+              android:layout_marginRight="35dp">
+
+
+              <ImageView
+                  android:layout_marginLeft="4dp"
+                  android:id="@+id/iv_nikename_gerenzhuce"
+                  android:layout_centerVertical="true"
+                  android:layout_width="20dp"
+                  android:layout_height="26dp"
+                  android:src="@mipmap/nikename_zhuce"/>
+
+              <ImageView
+                  android:layout_toRightOf="@+id/iv_nikename_gerenzhuce"
+                  android:id="@+id/line_nikename_gerenzhuce"
+                  android:layout_marginLeft="7dp"
+                  android:layout_centerVertical="true"
+                  android:background="#43aa78"
+                  android:layout_width="0.5dp"
+                  android:layout_height="15dp"
+                  />
+              <EditText
+                  android:id="@+id/et_nikename_gerenzhuce"
+                  android:layout_toRightOf="@+id/line_nikename_gerenzhuce"
+                  android:layout_marginLeft="8dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:textSize="12sp"
+                  android:hint="请输入昵称"
+                  android:background="@null"
+                  android:textColorHint="#6606b4a1"
+                  android:textCursorDrawable="@drawable/et_color_cusor"
+                  />
+          </RelativeLayout>
+
+      </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_change_qiyezhuce"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp">
+
+                <ImageView
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/iv_password_qiyezhuce"
+                    android:layout_centerVertical="true"
+                    android:layout_width="20dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/password1_zhuce"/>
+
+                <ImageView
+                    android:layout_toRightOf="@+id/iv_password_qiyezhuce"
+                    android:id="@+id/line_password_qiyezhuce"
+                    android:layout_marginLeft="7dp"
+                    android:layout_centerVertical="true"
+                    android:background="#43aa78"
+                    android:layout_width="0.5dp"
+                    android:layout_height="30dp"
+                    />
+                <EditText
+                    android:layout_toRightOf="@+id/line_password_qiyezhuce"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/et_password_qiyezhuce"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:hint="请输入密码(不少于6位)"
+                    android:background="@null"
+                    android:textColorHint="#6606b4a1"
+                    android:inputType="numberPassword"
+                    android:textCursorDrawable="@drawable/et_color_cusor"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#a3bac3"/>
+            <RelativeLayout
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp">
+
+
+                <ImageView
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/iv_nikename_qiyezhuce"
+                    android:layout_centerVertical="true"
+                    android:layout_width="20dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/password2_zhuce"/>
+
+                <ImageView
+                    android:layout_toRightOf="@+id/iv_nikename_qiyezhuce"
+                    android:id="@+id/line_nikename_qiyezhuce"
+                    android:layout_marginLeft="7dp"
+                    android:layout_centerVertical="true"
+                    android:background="#43aa78"
+                    android:layout_width="0.5dp"
+                    android:layout_height="30dp"
+                    />
+                <EditText
+                    android:layout_toRightOf="@+id/line_nikename_qiyezhuce"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/et_confirm_password_qiyezhuce"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:hint="请再次输入密码"
+                    android:background="@null"
+                    android:textColorHint="#6606b4a1"
+                    android:inputType="numberPassword"
+                    android:textCursorDrawable="@drawable/et_color_cusor"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="108dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkbox_zhuce"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_height="30dp"
+                android:button="@drawable/check_state"
+                android:text="阅读并同意《用户注册申请协议》"
+                android:textColor="#b5b5b5"
+                android:textSize="10sp"/>
+
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/denglu_yiyouzhanghao"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已有账号登录"
+                    android:textSize="10sp"
+                    android:textColor="#b5b5b5"
+                    android:onClick="ZhuCeBtn"
+                    />
+                <ImageView
+                    android:layout_below="@+id/denglu_yiyouzhanghao"
+                    android:layout_alignRight="@+id/denglu_yiyouzhanghao"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#b5b5b5"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="200dp"
+            android:layout_height="30dp">
+            <Button
+                android:id="@+id/zhuce_sure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="注册"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+               android:layout_centerInParent="true"
+                android:background="@drawable/zhuce_button_background"
+                android:layout_marginTop="10dp"
+                android:onClick="ZhuCeBtn"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headview_shouye"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/logo_shouye"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <android.support.v4.view.ViewPager
+            android:scaleType="fitXY"
+            android:id="@+id/vp_shouye"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_points"
+            android:layout_marginTop="160dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:background="#f5f5f5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_fresh_shou_ye"
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_width="90dp"
+            android:orientation="horizontal"
+            android:layout_height="26dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            >
+            <TextView
+                android:id="@+id/tv_fresh"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#8cc21f"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="最新" />
+            <TextView
+                android:id="@+id/tv_fresh_English"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#8cc21f"
+                android:textSize="10sp"
+                android:gravity="center_vertical"
+                android:text="Fresh" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hot_shou_ye"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_width="90dp"
+            android:orientation="horizontal"
+            android:layout_height="26dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            >
+            <TextView
+                android:id="@+id/tv_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="最热"/>
+            <TextView
+                android:id="@+id/tv_hot_English"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#666666"
+                android:textSize="10sp"
+                android:gravity="center_vertical"
+                android:text="Hot"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

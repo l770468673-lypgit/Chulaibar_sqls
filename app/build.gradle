@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    defaultConfig {
+        applicationId "com.tianyi.chulaibar"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.cjj.materialrefeshlayout:library:1.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.bigkoo:alertview:1.0.2'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'cn.bingoogolapple:bga-imageview:1.0.0'
+    compile files('libs/AMap_Location_V3.2.0_20161205.jar')
+    compile files('libs/AMap_Search_V3.6.1_20161122.jar')
+    compile files('libs/Android_Map3D_SDK_V4.1.3_20161208.jar')
+    compile files('libs/Volley.jar')
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    // glide
+    compile 'com.github.bumptech.glide:glide:+'
+     compile project(':ActiveAndroid-master')
+}

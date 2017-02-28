@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/charge_baoming"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:text="选择收费项目"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+<ImageView
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="1dp" />
+
+    <!--成人票-->
+<LinearLayout
+    android:id="@+id/ll_adult"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <ImageView
+         android:layout_gravity="center_vertical"
+         android:background="#43E577"
+         android:layout_width="2dp"
+         android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ll_desciption_adult"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="60dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+         <TextView
+             android:text="单日-成人票"
+             android:textColor="#262728"
+             android:layout_width="0dp"
+             android:layout_weight="2"
+             android:layout_height="match_parent" />
+
+            <TextView
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="0dp"
+              android:layout_weight="2"
+              android:layout_height="match_parent">
+              <TextView
+                  android:text="剩余:"
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="150张"
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1">
+
+           <TextView
+               android:maxLines="1"
+               android:text="请妥善保管好您的票据与激活码，参与活动"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+       </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_price_adult"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp">
+       <TextView
+           android:gravity="right"
+           android:text="￥ 98"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+      <ImageView
+          android:src="@mipmap/delete_baoming"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="center"
+            android:text="1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@mipmap/add_baoming"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<!--儿童票-->
+
+    <LinearLayout
+        android:id="@+id/ll_child"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:background="#43E577"
+                android:layout_width="2dp"
+                android:layout_height="40dp" />
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ll_desciption_child"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="60dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="单日-儿童票"
+                        android:textColor="#262728"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:text=""
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text="剩余:"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:text="150张"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:maxLines="1"
+                        android:text="请妥善保管好您的票据与激活码，参与活动"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_price_child"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp">
+                <TextView
+                    android:gravity="right"
+                    android:text="￥ 98"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:src="@mipmap/delete_baoming"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:src="@mipmap/add_baoming"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--老人票-->
+    <LinearLayout
+        android:id="@+id/ll_old"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:background="#43E577"
+                android:layout_width="2dp"
+                android:layout_height="40dp" />
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ll_desciption_old"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="60dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="单日-老人票"
+                        android:textColor="#262728"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:text=""
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text="剩余:"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:text="150张"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:maxLines="1"
+                        android:text="请妥善保管好您的票据与激活码，参与活动"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_price_old"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp">
+                <TextView
+                    android:gravity="right"
+                    android:text="￥ 98"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:src="@mipmap/delete_baoming"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:src="@mipmap/add_baoming"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+  <!--购票后的下一步操作-->
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1">
+
+           <TextView
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:text="￥98"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/iv_checkbox_baoming"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/checkbox_baoming"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/tv_agree_baoming"
+                    android:layout_toRightOf="@+id/iv_checkbox_baoming"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:text="我同意"
+                    android:textColor="#262728"
+                    android:textSize="12sp"
+                    android:button="@drawable/checkbox_baoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/tv_agree_baoming"
+                    android:layout_centerVertical="true"
+                    android:text="《出来吧活动支付协议》"
+                    android:textColor="#0CB99C"
+                    android:textSize="12sp"
+                    android:button="@drawable/checkbox_baoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_baoming_next_activity_detail"
+                android:padding="5dp"
+                android:background="@drawable/confrim_faxian_background"
+                android:text="下一步"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

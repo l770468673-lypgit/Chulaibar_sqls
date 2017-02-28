@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#eff2f7"
+    tools:context=".activity.PrizeActivity">
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/iv_back_prize_activity"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_shezhi"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/tv_title_prize_activity"
+            android:text="有奖反馈"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+      <RelativeLayout
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="37dp">
+
+            <TextView
+                android:id="@+id/tv_huodong_prize_activity"
+                android:text="发现版块"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+          <com.tianyi.chulaibar.util.StarView
+              android:id="@+id/starview_01_prize_activity"
+              android:layout_centerVertical="true"
+              android:layout_toLeftOf="@+id/tv_huodong2_prize_activity"
+              android:layout_marginRight="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+              fresco:mClickImageId="@mipmap/star_selected"
+              fresco:mDefaultImageId="@mipmap/star_normal"
+              fresco:mImageHeight="13dp"
+              fresco:mImageWidth="13dp"
+              fresco:mMargin="0dp"
+              fresco:mStarChoose="3"
+              fresco:mStarNum="5"
+              />
+
+          <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_huodong2_prize_activity"
+                android:layout_centerVertical="true"
+                android:text="一般"
+                android:textColor="#0c9d9a"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:background="@drawable/pingjia_prize_activity_background"
+                android:layout_width="29dp"
+                android:layout_height="15dp" />
+      </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <TextView
+            android:id="@+id/tv_fabu_prize_activity"
+            android:text="发布版块"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <com.tianyi.chulaibar.util.StarView
+            android:id="@+id/starview_02_prize_activity"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_fabu2_prize_activity"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            fresco:mClickImageId="@mipmap/star_selected"
+            fresco:mDefaultImageId="@mipmap/star_normal"
+            fresco:mImageHeight="13dp"
+            fresco:mImageWidth="13dp"
+            fresco:mMargin="0dp"
+            fresco:mStarChoose="3"
+            fresco:mStarNum="5"
+            />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_fabu2_prize_activity"
+            android:layout_centerVertical="true"
+            android:text="一般"
+            android:textColor="#0c9d9a"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@drawable/pingjia_prize_activity_background"
+            android:layout_width="29dp"
+            android:layout_height="15dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <TextView
+            android:id="@+id/tv_guanli_prize_activity"
+            android:text="我的管理"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <com.tianyi.chulaibar.util.StarView
+            android:id="@+id/starview_03_prize_activity"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_guanli2_prize_activity"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            fresco:mClickImageId="@mipmap/star_selected"
+            fresco:mDefaultImageId="@mipmap/star_normal"
+            fresco:mImageHeight="13dp"
+            fresco:mImageWidth="13dp"
+            fresco:mMargin="0dp"
+            fresco:mStarChoose="3"
+            fresco:mStarNum="5"
+            />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_guanli2_prize_activity"
+            android:layout_centerVertical="true"
+            android:text="一般"
+            android:textColor="#0c9d9a"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@drawable/pingjia_prize_activity_background"
+            android:layout_width="29dp"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#ffffff"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <TextView
+            android:id="@+id/tv_tiyan_prize_activity"
+            android:text="用户体验"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <com.tianyi.chulaibar.util.StarView
+            android:id="@+id/starview_04_prize_activity"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_tiyan2_prize_activity"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            fresco:mClickImageId="@mipmap/star_selected"
+            fresco:mDefaultImageId="@mipmap/star_normal"
+            fresco:mImageHeight="13dp"
+            fresco:mImageWidth="13dp"
+            fresco:mMargin="0dp"
+            fresco:mStarChoose="3"
+            fresco:mStarNum="5"
+            />
+
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_tiyan2_prize_activity"
+            android:layout_centerVertical="true"
+            android:text="一般"
+            android:textColor="#0c9d9a"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@drawable/pingjia_prize_activity_background"
+            android:layout_width="29dp"
+            android:layout_height="15dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <TextView
+            android:id="@+id/tv_gongneng_prize_activity"
+            android:text="软件功能"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <com.tianyi.chulaibar.util.StarView
+            android:id="@+id/starview_05_prize_activity"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_gongneng2_prize_activity"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            fresco:mClickImageId="@mipmap/star_selected"
+            fresco:mDefaultImageId="@mipmap/star_normal"
+            fresco:mImageHeight="13dp"
+            fresco:mImageWidth="13dp"
+            fresco:mMargin="0dp"
+            fresco:mStarChoose="3"
+            fresco:mStarNum="5"
+            />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_gongneng2_prize_activity"
+            android:layout_centerVertical="true"
+            android:text="一般"
+            android:textColor="#0c9d9a"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@drawable/pingjia_prize_activity_background"
+            android:layout_width="29dp"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/et_detail_fabu_background"
+       android:layout_gravity="center_horizontal"
+        android:layout_width="315dp"
+        android:layout_height="85dp">
+
+        <EditText
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="6dp"
+            android:textSize="11sp"
+            android:textColor="#0c9d9a"
+            android:background="@null"
+            android:hint="您对出来吧的建议......"
+            android:textColorHint="#0c9d9a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_commit_prize_activity"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:text="提交"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_prize_activtity_backgroud"
+        android:layout_width="125dp"
+        android:layout_height="27dp" />
+</LinearLayout>
